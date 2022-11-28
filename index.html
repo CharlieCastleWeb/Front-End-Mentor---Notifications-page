@@ -4,97 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles/css/main.css">
   
   <title>Frontend Mentor | Notifications page</title>
+
+  <style>
+    
+  </style>
 
 </head>
 <body>
 
   <header>
     <h1>Notifications</h1>
-    <h2>3</h2>
-    <a href="#">Mark all as read</a>
+    <h2 class="notification-number">3</h2>
+    <a href="#" class="mark-read-button">Mark all as read</a>
   </header>
 
   <main>
     
     <div class="notification unseen-notification">
-      <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber profile picture">
+      <img 
+        src="./assets/images/avatar-mark-webber.webp" 
+        alt="Mark Webber profile picture" 
+        class="profile-picture"
+      >
       <div>
         <p>
-          <a href="#">Mark Webber</a> reacted to your recent post <a href="#" class="post-text">My first tournament today!</a>
-          <span class="unseen-mark">*</span>
+          <a href="#" class="profile-name">Mark Webber</a> 
+          reacted to your recent post 
+          <a href="#" class="post-text">My first tournament today!</a>
+          <span class="unseen-mark">•</span>
         </p>
         <p class="time">1m ago</p>
       </div>
     </div>
 
     <div class="notification unseen-notification">
-      <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray profile picture">
+      <img 
+        src="./assets/images/avatar-angela-gray.webp" 
+        alt="Angela Gray profile picture"
+        class="profile-picture"
+      >
       <div>
         <p>
-          <a href="#">Angela Gray</a> followed you
-          <span class="unseen-mark">*</span>
+          <a href="#" class="profile-name">Angela Gray</a> followed you
+          <span class="unseen-mark">•</span>
         </p>
         <p class="time">5m ago</p>
       </div>
     </div>
 
     <div class="notification unseen-notification">
-      <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson profile picture">
+      <img 
+        src="./assets/images/avatar-jacob-thompson.webp" 
+        alt="Jacob Thompson profile picture"
+        class="profile-picture"
+      >
       <div>
         <p>
-          <a href="#">Jacob Thompson</a> has joined your group <a href="#" class="group">Chess Club</a>
-          <span class="unseen-mark">*</span>
+          <a href="#" class="profile-name">Jacob Thompson</a> has joined your group <a href="#" class="group">Chess Club</a>
+          <span class="unseen-mark">•</span>
         </p>
         <p class="time">1 day ago</p>
       </div>
     </div>
 
     <div class="notification">
-      <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin profile picture">
+      <img 
+        src="./assets/images/avatar-rizky-hasanuddin.webp" 
+        alt="Rizky Hasanuddin profile picture"
+        class="profile-picture"
+      >
       <div>
-        <p><a href="#">Rizky Hasanuddin</a> sent you a private message</p>
+        <p><a href="#" class="profile-name">Rizky Hasanuddin</a> sent you a private message</p>
         <p class="time">5 days ago</p>
-        <p class="private-message">
-          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
-        </p>
+        <a href="" class="private-message">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+          </p>
+        </a>
       </div>
     </div>
 
     <div class="notification">
-      <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith profile picture">
+      <img 
+        src="./assets/images/avatar-kimberly-smith.webp" 
+        alt="Kimberly Smith profile picture"
+        class="profile-picture"
+      >
       <div>
-        <p><a href="#">Kimberly Smith</a> commented on your picture</p>
+        <p><a href="#" class="profile-name">Kimberly Smith</a> commented on your picture</p>
         <p class="time">1 week ago</p>
-        <img src="./assets/images/image-chess.webp" alt="Girl playing chess" class="post-image">
       </div>
+      <a href="#" class="post-image">
+        <img 
+            src="./assets/images/image-chess.webp" 
+            alt="Girl playing chess" 
+            class="post-image"
+          >
+      </a>
     </div>
 
     <div class="notification">
-      <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson profile picture">
+      <img 
+        src="./assets/images/avatar-nathan-peterson.webp" 
+        alt="Nathan Peterson profile picture"
+        class="profile-picture"
+      >
       <div>
         <p>
-          <a href="#">Nathan Peterson</a> reacted to your recent post 
+          <a href="#" class="profile-name">Nathan Peterson</a> reacted to your recent post 
           <a href="#" class="post-text">5 end-game strategies to increase your win rate</a>
         </p>
         <p class="time">2 weeks ago</p>
-        <img src="./assets/images/image-chess.webp" alt="Girl playing chess" class="post-image">
       </div>
     </div>
 
     <div class="notification">
-      <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim profile picture">
+      <img 
+        src="./assets/images/avatar-anna-kim.webp" 
+        alt="Anna Kim profile picture"
+        class="profile-picture"
+      >
       <div>
         <p>
-          <a href="#">Anna Kim</a> left the group 
+          <a href="#" class="profile-name">Anna Kim</a> left the group 
           <a href="#" class="group">Chess Club</a>
         </p>
         <p class="time">2 weeks ago</p>
-        <img src="./assets/images/image-chess.webp" alt="Girl playing chess" class="post-image">
       </div>
     </div>
 
@@ -104,5 +144,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://carloscastillo.dev/">Carlos Castillo</a>.
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

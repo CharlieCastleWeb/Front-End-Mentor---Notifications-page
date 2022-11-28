@@ -1,0 +1,181 @@
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+/* Primary */
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+
+/* Neutral */
+$white: hsl(0, 0%, 100%);
+$very-light-grayish-blue: hsl(210, 60%, 98%);
+$light-grayish-blue-1: hsl(211, 68%, 94%);
+$light-grayish-blue-2: hsl(205, 33%, 90%);
+$grayish-blue: hsl(219, 14%, 63%);
+$dark-grayish-blue: hsl(219, 12%, 42%);
+$very-dark-blue: hsl(224, 21%, 14%);
+
+
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: PlusJakartaSans, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-variation-settings: "wght" 800;
+}
+
+a {
+    text-decoration: none;
+    font-variation-settings: "wght" 800;
+    cursor: pointer;
+}
+
+.notification p {
+    font-size: 0.95rem;
+    color: $dark-grayish-blue;
+}
+
+.notification-number {
+    color: $white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.mark-read-button {
+    color: $dark-grayish-blue;
+}
+
+.profile-name {
+    color: $very-dark-blue;
+}
+
+.post-text {
+    color: $dark-grayish-blue;
+}
+
+.group {
+    color: $blue;
+}
+
+.unseen-mark {
+    font-variation-settings: "wght" 800;
+    color: $red;
+}
+
+.time {
+    color: $grayish-blue !important;
+}
+
+.private-message {
+    font-variation-settings: "wght" 500;
+    font-size: 0.95rem;
+    color: $dark-grayish-blue;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* LAYOUT */
+
+header,
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 1em;
+    display: flex;
+    align-items: baseline;
+}
+
+.notification-number {
+    background-color: $blue;
+    width: 40px;
+    margin-left: 0.3em;
+    padding: 0.2em 0em;
+    border-radius: 5px;
+}
+
+.mark-read-button {
+    display: block;
+    margin-left: auto;
+    align-self: center;
+}
+
+main {
+    margin-top: 1em;
+}
+
+.notification {
+    display: flex;
+    margin-top: 1em;
+    padding: 0.8em;
+    border-radius: 10px;
+}
+
+.unseen-notification {
+    background-color: $light-grayish-blue-1;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.8em;
+}
+
+.time {
+    margin-top: 0.2em;
+}
+
+.private-message {
+    display: block;
+    border: 1px solid $light-grayish-blue-2;
+    padding: 0.8em;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+.private-message:hover,
+.private-message:focus {
+    background-color: $light-grayish-blue-1;
+}
+
+.post-image {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+
+/* MEDIA QUERIES */
+
+

@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* Primary */
+/* Neutral */
+/* TYPOGRAPHY */
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+body {
+  font-family: PlusJakartaSans, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 800;
+}
+
+a {
+  text-decoration: none;
+  font-variation-settings: "wght" 800;
+  cursor: pointer;
+}
+
+.notification p {
+  font-size: 0.95rem;
+  color: hsl(219deg, 12%, 42%);
+}
+
+.notification-number {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.mark-read-button {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.profile-name {
+  color: hsl(224deg, 21%, 14%);
+}
+
+.post-text {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.group {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.unseen-mark {
+  font-variation-settings: "wght" 800;
+  color: hsl(1deg, 90%, 64%);
+}
+
+.time {
+  color: hsl(219deg, 14%, 63%) !important;
+}
+
+.private-message {
+  font-variation-settings: "wght" 500;
+  font-size: 0.95rem;
+  color: hsl(219deg, 12%, 42%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/* LAYOUT */
+header,
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 1em;
+  display: flex;
+  align-items: baseline;
+}
+
+.notification-number {
+  background-color: hsl(219deg, 85%, 26%);
+  width: 40px;
+  margin-left: 0.3em;
+  padding: 0.2em 0em;
+  border-radius: 5px;
+}
+
+.mark-read-button {
+  display: block;
+  margin-left: auto;
+  align-self: center;
+}
+
+main {
+  margin-top: 1em;
+}
+
+.notification {
+  display: flex;
+  margin-top: 1em;
+  padding: 0.8em;
+  border-radius: 10px;
+}
+
+.unseen-notification {
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.8em;
+}
+
+.time {
+  margin-top: 0.2em;
+}
+
+.private-message {
+  display: block;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  padding: 0.8em;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+
+.private-message:hover,
+.private-message:focus {
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+.post-image {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+}
+
+footer {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* MEDIA QUERIES *//*# sourceMappingURL=main.css.map */
