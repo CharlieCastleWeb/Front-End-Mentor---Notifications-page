@@ -6,7 +6,6 @@ window.onload = function() {
     const unreadNotifications = document.querySelectorAll(".unseen-notification");
     const unseenMarks = document.querySelectorAll(".unseen-mark");
 
-
     markReadBtn.addEventListener("click", function() {
         notificationNumber.innerHTML = "0";
         unreadNotifications.forEach(element => {
@@ -16,6 +15,4 @@ window.onload = function() {
             element.remove();
         })
     });
-
-
 }
