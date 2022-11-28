@@ -126,7 +126,7 @@ header {
 }
 
 main {
-    margin-top: 1em;
+    padding-top: 0.8em;
 }
 
 .notification {
@@ -178,4 +178,29 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 750px) {
+    body {
+        background-color: $very-light-grayish-blue;
+    }
+
+    header,
+    main {
+        background-color: $white;
+        width: 60%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    header {
+        margin-top: 2em;
+        padding-top: 1em;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    main {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
 

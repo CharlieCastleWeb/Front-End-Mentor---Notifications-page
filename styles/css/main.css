@@ -108,7 +108,7 @@ header {
 }
 
 main {
-  margin-top: 1em;
+  padding-top: 0.8em;
 }
 
 .notification {
@@ -157,4 +157,26 @@ footer {
   margin-bottom: 1em;
 }
 
-/* MEDIA QUERIES *//*# sourceMappingURL=main.css.map */
+/* MEDIA QUERIES */
+@media (min-width: 750px) {
+  body {
+    background-color: hsl(210deg, 60%, 98%);
+  }
+  header,
+main {
+    background-color: hsl(0deg, 0%, 100%);
+    width: 60%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  header {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  main {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */
